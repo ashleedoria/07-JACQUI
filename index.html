@@ -1,0 +1,121 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Becas para Estudiantes | UANL y Federales</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+    <!-- Alerta personalizada en JavaScript al hacer clic en una beca -->
+    <script>
+        function avisarBeca(nombreBeca) {
+            alert("Vas a ser redirigida a la información oficial de la " + nombreBeca + ". ¡Prepara tus documentos!");
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Encabezado superior con título centrado -->
+    <header class="header-nav">
+        <h1 class="titulo-principal">Opciones de Becas para Estudiantes</h1>
+        <hr>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="contenedor-becas">
+        <section class="seccion-info">
+            <p class="subtitulo">Consulta la <strong>información oficial</strong> y aplica a las convocatorias disponibles:</p>
+            <mark>Nota importante:</mark> <em>Revisa bien los folios y fechas límite de cada convocatoria.</em>
+        </section>
+
+        <!-- Sección de tarjetas en lista vertical ordenada con logotipos -->
+        <section class="tarjetas-grid">
+
+            <!-- Beca 1 -->
+            <article class="tarjeta-beca">
+                <div class="header-tarjeta">
+                    <img src="fime-logo.png" alt="Logo FIME UANL" class="logo-beca">
+                    <h2>1. Beca Rectoría FIME UANL</h2>
+                </div>
+                <p>Apoyo económico e institucional destinado a estudiantes de la <b>Facultad de Ingeniería Mecánica y Eléctrica</b> de la UANL para cuotas escolares y mantenimiento.</p>
+                <a href="https://www.fime.uanl.mx/becas/" target="_blank" onclick="avisarBeca('Beca Rectoría FIME')" class="btn-enlace">Visitar sitio oficial</a>
+            </article>
+
+            <!-- Beca 2 -->
+            <article class="tarjeta-beca">
+                <div class="header-tarjeta">
+                    <img src="logo_gob_mx.png" alt="Logo Gobierno Federal" class="logo-beca">
+                    <h2>2. Beca Jóvenes Escribiendo el Futuro</h2>
+                </div>
+                <p>Programa del <small>Gobierno Federal</small> priorizado para estudiantes de nivel superior en instituciones públicas, enfocado en apoyar la permanencia escolar.</p>
+                <a href="https://www.gob.mx/becasbenitojuarez/articulos/beca-jovenes-escribiendo-el-futuro-326084" target="_blank" onclick="avisarBeca('Beca Jóvenes Escribiendo el Futuro')" class="btn-enlace">Visitar sitio oficial</a>
+            </article>
+
+            <!-- Beca 3 -->
+            <article class="tarjeta-beca">
+                <div class="header-tarjeta">
+                    <img src="logo-santander.svg" alt="Logo Santander" class="logo-beca">
+                    <h2>3. Beca Santander Estudios</h2>
+                </div>
+                <p>Convocatoria emitida por Grupo Santander para promover el desempeño académico, la excelencia y la manutención de estudiantes universitarios.</p>
+                <a href="https://app.santanderopenacademy.com/es/program/search" target="_blank" onclick="avisarBeca('Beca Santander Estudios')" class="btn-enlace">Visitar sitio oficial</a>
+            </article>
+
+            <!-- Beca 4 -->
+            <article class="tarjeta-beca">
+                <div class="header-tarjeta">
+                    <img src="Afirme_logo.png" alt="Logo Fundación AFIRME" class="logo-beca">
+                    <h2>4. Beca Fundación AFIRME</h2>
+                </div>
+                <p>Programa de desarrollo e impacto social (<i>Impulso Local</i>) que brinda apoyos a estudiantes universitarios para la continuidad de sus estudios superiores.</p>
+                <a href="https://www.afirme.com/Quienes-Somos.html" target="_blank" onclick="avisarBeca('Beca Fundación AFIRME')" class="btn-enlace">Visitar sitio oficial</a>
+            </article>
+
+        </section>
+
+        <!-- Tabla complementaria con requisitos generales -->
+        <section class="seccion-tabla">
+            <h3>Resumen de Requisitos Generales</h3>
+            <table class="tabla-becas">
+                <thead>
+                    <tr>
+                        <th>Beca</th>
+                        <th>Nivel</th>
+                        <th>Estatus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rectoría FIME</td>
+                        <td>Licenciatura</td>
+                        <td><span class="estatus-activa">Activa</span></td>
+                    </tr>
+                    <tr>
+                        <td>Jóvenes Escribiendo el Futuro</td>
+                        <td>Superior</td>
+                        <td><span class="estatus-activa">Activa</span></td>
+                    </tr>
+                    <tr>
+                        <td>Beca Santander Estudios</td>
+                        <td>Universitario</td>
+                        <td><span class="estatus-activa">Activa</span></td>
+                    </tr>
+                    <tr>
+                        <td>Fundación AFIRME (Impulso Local)</td>
+                        <td>Superior</td>
+                        <td><span class="estatus-activa">Activa</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Botón de regreso al final de la página -->
+        <section class="seccion-boton-regresar">
+            <nav>
+                <a href="https://m3nny75.github.io/Pia-Progra-web/" class="btn-regresar">← Regresar a la pagina principal del PIA</a>
+            </nav>
+        </section>
+    </main>
+
+</body>
+</html>
